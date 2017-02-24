@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Lyft</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">	
+	<link rel="stylesheet icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/animate.css">	
+	<link rel="stylesheet" href="icons/style.css">	
+	<link rel="stylesheet" href="css/queries.css">
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body onload="updateFlagCodeContry()">
+    <section class="sign-up">
+        <div class="container-fluid text-center">
+            <h2><a href="index.html"><span class="icon-chevron-thin-left" class='icon-left' style="float:left;"></span></a>Sign up</h2>
+            <p>Join now for free ride credit</p>
+            <hr>
+            <!--<div class="input-group" style="padding-bottom: 20px;">
+                <div class="input-group-btn">
+                    <!-- Buttons -->
+                    <!--<a href="" onclick="selectFlagCountry(event)"><button class="btn" id="eflag-country" ><img src="flags/Peru.png" alt="" id="img-flag">&nbsp<span class="caret" style="color:#333;"></span></button></a>
+                    <button class="btn" id="code-country">+51</button>
+                </div>
+                <input type="text" class="form-control" aria-label="..." id='phone-number' placeholder="11234567" onkeyup="saveNumPhone()">
+            </div>-->
+            <div class="row">
+                    <div class="col-lg-6">
+                    <div class="input-group">
+                      <div class="input-group-btn">
+                       
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a href="selecCountry.html" style="text-decoration:none;">
+                        <img src="flags/Peru.png" alt="" id="img-flag"> <span class="caret"></span>
+                        </a>
+                        </button>
+                       
+                     </div><!-- /btn-group -->
+                      <span id="code">+51</span>
+                      <input type="text" class="form-control" aria-label="..." placeholder="11234567" id="phone-number" onkeyup="saveNumPhone()">
+                    </div><!-- /input-group -->
+                  </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+                <br>
+            <p>We'll send a text to verify your phone</p>
+        </div> 
+        
+    <a href="signUP.html" id='btn-next-sign-Up' style="text-decoration:none;">Next</a>          
+    </section> 
+    <script src="js/signUpNum.js"></script>     
+    <script src="js/getFlagCode.js"></script>     
+</body>
+</html>
+
+
+
+
+

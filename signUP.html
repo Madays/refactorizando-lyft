@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Lyft</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">	
+	<link rel="stylesheet icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="icons/style.css">
+	<link rel="stylesheet" href="css/queries.css">
+	<link rel="stylesheet" href="css/common.css">	
+</head>
+<body>
+    <section class="sign-up">
+        <div class="container-fluid text-center">
+            <div class="tittle-signUp">
+                <h2><a href="signUpNumber.html"><span class="icon-chevron-thin-left" class='icon-left' style="float:left;"></span></a>Sign up</h2> 
+            </div>            
+            <p>Join now for free ride credit</p>
+            <hr>
+            <div class="container"> 
+                <form action="">
+                    <div id="input-box">
+                        <i class="icon-profile-male" id="icon-sign-up"></i>
+                        <input type="text" class="form-control" id="nameLastname" placeholder="First name                                  Last name" onkeyup="validateName()">
+                    </div>
+                    <div id="input-box">
+                        <i class="icon-mail" id="icon-sign-up"></i>
+                        <br>
+                        <input type="email" class="form-control" id="input-email" placeholder="Email"> </div>   
+                </form>                
+                <br>
+                <p > <input type="checkbox" id="iAgree"><span> I agree to Lyft's </span><span id="terms">  Terms of Service</span></p>
+            </div> 
+            <a href="" id='btn-next-sign-Up' style="text-decoration:none;" onclick="nextSignUp()">Next</a>
+
+        </div>
+    </section>    
+    <script src="js/signUp.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</body>
+</html>
+
+
+
+
+

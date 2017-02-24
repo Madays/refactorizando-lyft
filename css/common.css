@@ -1,0 +1,96 @@
+/*---------First page---------*/
+.box-container{
+    position: relative;
+}
+section.to-start{
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    left: 0;
+}
+section.to-start .box-botton{
+    
+}
+section.to-start a#logIn{
+    position: absolute;
+    right: 0; 
+    border: solid 1px #fff;    
+}
+section.to-start a#signUp{
+    position: absolute;
+    background: linear-gradient(to right, #7E00BF , #D800BF);
+}
+a#logIn, a#signUp{
+    text-decoration: none;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 3px;
+}
+/*------END---First page---------*/
+/*------------Sign Up-----------*/
+#input-box{
+    position: relative;
+}
+#input-box input{
+    padding-left: 35px;
+}
+.icon-mail {
+    position: absolute;
+    left: 10px;
+    top: 30px;
+    color: #7D7D89;
+    font-size: 18px;
+}
+.icon-profile-male {
+    color: #7D7D89;
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    border: 1px solid #7D7D89;
+    border-radius: 40%;
+    line-height: 18px;
+    
+}
+
+input#iAgree{
+    color: #95CFE8;
+    padding: 0;
+    margin: 0;
+} 
+span#terms{
+    color: #95CFE8;
+}
+#btn-next-sign-Up{
+    background-color: #FC1EBE;
+    color: #fff;
+    font-size: 25px;
+    padding: 20px 0;
+    display: block;
+    margin-top: 30px; 
+    text-align: center;
+}
+/*---------END---Sign Up-----------*/
+/*------------Sign Up Number-----------*/
+#code{
+    position: absolute;
+    left: 60px;
+    top: 9px;
+    z-index: 10;
+}
+#phone-number{
+    padding-left: 35px;
+}
+/*---------END---Sign Up Number-----------*/
+/*------------select-country-----------*/
+section.select-country h4{
+    background-color: #EFEFF4;  
+    padding: 10px 20px;   
+}
+section.select-country li{
+    list-style: none;    
+}
+#code-country{
+    visibility: hidden;
+}
+/*---------END---select-country-----------*/
+

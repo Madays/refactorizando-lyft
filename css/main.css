@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    background-image: url('../img/portada.jpg');
+    background-size:cover;
+    background-position: top center;
+    background-repeat: no-repeat;    
+    background-attachment: fixed;
+    height: 100vh;
+    /* 
+    background-position: center;
+    
+    */
+}
+body{
+    background: none;
+    height: 100vh;
+    
+}
