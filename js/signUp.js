@@ -40,7 +40,7 @@ function validateEmail(){
     
     var email = $('#input-email');
     if(validate.isEmail(email.val())){
-            deleteAdviceMessage('#input-email');                
+        deleteAdviceMessage('#input-email');                
                
     }else{        
         adviceMessage('#input-email','Ingresar su correo');
