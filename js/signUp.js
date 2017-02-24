@@ -1,20 +1,11 @@
 /*------Validar formulario----*/
 function adviceMessage(_id,_advice){
     var id = $(_id)[0];
-    //console.log(id[0]);
-    //var span = document.createElement('span');
-    var idContainer = $(_id).parent().append('<br><span>'+_advice+'</span>').css("color","red");
-    //var span = idContainer.find('span');
-    //console.log(span);
-    //var content = document.createTextNode(_advice);
-    //span.appendChild(content);
-    //id.parentNode.appendChild(span);    
+    var idContainer = $(_id).parent().append('<br><span>'+_advice+'</span>').css("color","red");   
 }
 //eliminar adviceMessage
 function deleteAdviceMessage(_id){
-    //var id = $(_id)[0];
     var id = $(_id);
-    //id.parentNode.removeChild(id.nextSibling);
     id.next().remove();
 }
 //validar nombre, apellido, correo, password
@@ -38,8 +29,6 @@ function validateName(){
             deleteAdviceMessage('#nameLastname');     
         }           
     }else{
-        
-        //console.log(name.next().length); 
         if(name.next().length==0){
             adviceMessage('#nameLastname','Ingresar su nombre y apellido');       
         } 
@@ -72,27 +61,18 @@ function firstLetterUpperCase(_id){
     return $(_id).val(arrayNombre);  
 }
 
-function nextSignUp(){
+function validateSignUp(){
     validateEmail();
-    alert('La primera');
+    validateName();
     var name = $('#nameLastname'); 
     var email = $('#input-email');
-    if((validate.isEmail(email.val()))&&(validate.isText(name.val()))){
+    if((validate.isEmail(email.val()))&&(validate.isText(name.val()))&&($('#checkbox-agree').is(':checked'))){
         $('#btn-next-sign-Up').attr('href','app.html');
-        //alert(':)');
     }
-}
-function validarSeleccionBicicleta(){
-    var bicicleta = $("#seleccionaBicicleta").val();
-    //console.log(bicicleta);
-    if(bicicleta=='0'){
-        adviceMessage("#seleccionaBicicleta","Seleccione un tipo de bicicleta");
-    }else{
-        deleteAdviceMessage("#seleccionaBicicleta");
-    }
+    saveSignUpData();
 }
 
-function signIn(){
-    validateEmail();
-    validarSeleccionBicicleta();
+function saveSignUpData(){
+    localStorage.setItem('nameLastname',$('#nameLastname').val()); 
+    localStorage.setItem('email',$('#input-email').val()); 
 }
