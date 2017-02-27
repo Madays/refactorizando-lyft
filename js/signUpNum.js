@@ -1,5 +1,5 @@
 function saveNumPhone(){    
-    var numPhone = document.getElementById('phone-number'); localStorage.setItem('numPhone',numPhone.value);
+    var numPhone = $('#phone-number'); localStorage.setItem('numPhone',numPhone.val());
     //localStorage.getItem('numPhone');
 }
 
