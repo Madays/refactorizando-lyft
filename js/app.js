@@ -79,7 +79,7 @@ function showPosition(position) {
         map: map,
         position: {lat: myLatLng.lat, lng: myLatLng.lon},
         title: 'Hello World!',
-        icon:"img/taxi2.png"
+        icon:"img/car.png"
     });
     
     var myLatLng1 = [
@@ -87,9 +87,55 @@ function showPosition(position) {
     for(var i=0;i<=myLatLng1.length;i++){
         var marker1 = new google.maps.Marker({
           map: map,
-          position: myLatLng1[i],
+          position: myLatLng1[i],            
           title: 'Hello World!',
-          icon:"img/taxi2.png"
+          icon:"img/car.png"
         });    
-    }
+    }    
 }
+
+var car = [{"srcImg":"img/car.png",
+            "typeCar":"Line",
+            "seats":"Shared 2 riders max",
+            "standbyTime":3,
+            "unitTime":"min"},
+           {"srcImg":"img/car22.png",
+            "typeCar":"Lyft",
+            "seats":"4 seats",
+            "standbyTime":"3",
+            "unitTime":"min"},
+           {"srcImg":"img/car32.png",
+            "typeCar":"Plus",
+            "seats":"6 seats",
+            "standbyTime":4,
+            "unitTime":"min"},
+           {"srcImg":"img/car42.png",
+            "typeCar":"Premier",
+            "seats":"High-end, 4 seats",
+            "standbyTime":"3",
+            "unitTime":"min"},
+           ];
+
+$('#yourPosition').click(function(){  
+    for(var i=0;i<=car.length;i++){
+        $('ul').append('<li class="clearfix">'+
+               '<a href="">'+
+                '<img src='+car[i].srcImg+' alt="" style="float:left;padding: 20px 0px;" class="text-center">'+            
+                '<div style="float:left;padding: 0px 10px;">'+
+                    '<span>'+car[i].typeCar+'</span>'+
+                    '<br>'+
+                    '<span>'+car[i].seats+'</span>'+
+                '</div>' +
+                '<div style="float:right;padding: 0 10px;" class="text-center">'+
+                    '<span>'+car[i].standbyTime+'</span>'+
+                    '<br>'+
+                    '<span>'+car[i].unitTime+'</span>'+
+                '</div>'+
+               '</a>'+                 
+            '</li>'); 
+        $('ul').find('li').hover(function(){
+            $(this).css('color','red');    
+        });
+    }    
+});
+
