@@ -97,7 +97,7 @@ function showPosition(position) {
 var car = [{"srcImg":"img/car.png",
             "typeCar":"Line",
             "seats":"Shared 2 riders max",
-            "standbyTime":3,
+            "standbyTime":"3",
             "unitTime":"min"},
            {"srcImg":"img/car22.png",
             "typeCar":"Lyft",
@@ -113,29 +113,31 @@ var car = [{"srcImg":"img/car.png",
             "typeCar":"Premier",
             "seats":"High-end, 4 seats",
             "standbyTime":"3",
-            "unitTime":"min"},
+            "unitTime":"min"}
            ];
-
-$('#yourPosition').click(function(){  
-    for(var i=0;i<=car.length;i++){
-        $('ul').append('<li class="clearfix">'+
-               '<a href="">'+
-                '<img src='+car[i].srcImg+' alt="" style="float:left;padding: 20px 0px;" class="text-center">'+            
-                '<div style="float:left;padding: 0px 10px;">'+
-                    '<span>'+car[i].typeCar+'</span>'+
-                    '<br>'+
-                    '<span>'+car[i].seats+'</span>'+
-                '</div>' +
-                '<div style="float:right;padding: 0 10px;" class="text-center">'+
-                    '<span>'+car[i].standbyTime+'</span>'+
-                    '<br>'+
-                    '<span>'+car[i].unitTime+'</span>'+
-                '</div>'+
+$('#yourPosition').click(function(){ 
+        $('#cars').html('');
+        for(var i=0;i<=car.length;i++){        
+        $('ul').append('<li class="clearfix liCar">'+
+               '<a href="#">'+
+                    '<img src="'+car[i].srcImg+'" alt="" style="float:left;padding: 20px 0px;" class="text-center">'+            
+                    '<div style="float:left;padding: 0px 10px;">'+
+                        '<span>'+car[i].typeCar+'</span>'+
+                        '<br>'+
+                        '<span>'+car[i].seats+'</span>'+
+                    '</div>' +
+                    '<div style="float:right;padding: 0 10px;" class="text-center">'+
+                        '<span>'+car[i].standbyTime+'</span>'+
+                        '<br>'+
+                        '<span>'+car[i].unitTime+'</span>'+
+                    '</div>'+
                '</a>'+                 
             '</li>'); 
-        $('ul').find('li').hover(function(){
-            $(this).css('color','red');    
-        });
     }    
 });
+
+$("ul").on("click","li",selectCar);
+function selectCar(){
+    $("ul").html('');
+}
 
