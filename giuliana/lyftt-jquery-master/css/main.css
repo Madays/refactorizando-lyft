@@ -1,0 +1,36 @@
+body {
+    background: url("../img/portada.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: top center;
+}
+
+.btn {
+    font-size: 20px;
+    padding: 10px 20px;
+    
+}
+.logo
+{
+    width: 30%;
+}
+section{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-bottom:10px; 
+}
+.btn-1{
+	background: rgba(186, 185, 185, 0);
+	border: 1px solid white;
+}
+.btn-2{
+	background: #7500bf; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left top, #7500bf, #dd00bf); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #7500bf, #dd00bf); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #7500bf, #dd00bf); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #7500bf, #dd00bf); /* Standard syntax */
+	border: none;
+}

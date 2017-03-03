@@ -83,7 +83,8 @@ function showPosition(position) {
     });
     
     var myLatLng1 = [
-      {lat: -12.1511485, lng: -70.531948},{lat: -15.4521485, lng: -71.532948},{lat: -16.4531485, lng: -74.533948},{lat: -15.4541485, lng: -73.534948},{lat: -16.4571485, lng: -71.532948}];
+      {lat: -12.1511485, lng: -70.531948},{lat: -15.4521485, lng: -73.532948},{lat: -15.4521485, lng: -71.532948}];
+    //{lat: -15.4521485, lng: -71.532948},{lat: -16.4531485, lng: -74.533948},{lat: -15.4541485, lng: -73.534948},{lat: -16.4571485, lng: -71.532948}
     for(var i=0;i<=myLatLng1.length;i++){
         var marker1 = new google.maps.Marker({
           map: map,
@@ -119,7 +120,6 @@ $('#yourPosition').click(function(){
         $('#cars').html('');
         for(var i=0;i<=car.length;i++){        
         $('ul').append('<li class="clearfix liCar">'+
-               '<a href="#">'+
                     '<img src="'+car[i].srcImg+'" alt="" style="float:left;padding: 20px 0px;" class="text-center">'+            
                     '<div style="float:left;padding: 0px 10px;">'+
                         '<span>'+car[i].typeCar+'</span>'+
@@ -130,8 +130,7 @@ $('#yourPosition').click(function(){
                         '<span>'+car[i].standbyTime+'</span>'+
                         '<br>'+
                         '<span>'+car[i].unitTime+'</span>'+
-                    '</div>'+
-               '</a>'+                 
+                    '</div>'+                
             '</li>'); 
     }    
 });

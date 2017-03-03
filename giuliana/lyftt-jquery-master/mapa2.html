@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mapa2</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mapa2.css">
+</head>
+<body onload="init()">
+    <!-- ------------------------------------------------------------------ MAPA -->
+    <div id="map"></div>
+    
+    <!-- ---------------------------------------------------------- SEGUNDA VISTA -->
+    <div class="container">
+        <ul id="list-cars-dos">
+            <li>
+                <div class="row">
+                    <div class="col-xs-5">
+                        <img src="img/car-sedan.jpg" alt="" height="50px" width="50px" >
+                    </div>
+                    <div class="col-xs-7">
+                        <p id="name-car">Lyft <br><small>Fast ride, 4 seats</small></p>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="row">
+                    <div class="col-xs-6 text-center">
+                        <img src="img/master.png" height="30px" width="30px"alt="" > Personal <br><small>Payment</small>
+                    </div>
+                    <div class="col-xs-6">
+                        <p id="name-car" class="text-center">$6-12 <br><small>Price estimate</small></p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="row">
+                    <div class="col-xs-2">
+                        <i class="glyphicon glyphicon-heart" style="color:#ff00bf;"></i>
+                    </div>
+                    <div class="col-xs-10">
+                        <p id="name-car">2300 Harrison St</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="row">
+                    <div class="col-xs-2">
+                        <i class="glyphicon glyphicon-heart" style="color:#3c0980;"></i>
+                    </div>
+                    <div class="col-xs-10">
+                        <p id="name-car">Caltrain Station</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- ---------------------------------------------------- BOTON DE SELECCION -->
+    <a href="cobro.html"class="btn-request" id="boton-request">Request Lyft</a>
+    
+    <!-- ---------------------------------------------------------------- SCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/mapa2.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1OTUCWFO21snB64uTCKgsDmi3UlP5FCo&callback=initMap" async defer></script>
+    
+</body>
+</html>

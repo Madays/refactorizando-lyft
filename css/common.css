@@ -140,4 +140,50 @@ section.cars-nearby>a{
     width: 80%;
 }
 /*---------END---app-----------*/
+/*------------requestLyft-----------*/
+/*#career-cars{
+    position: absolute;
+    bottom: 40px;
+    list-style: none;
+    width: 98%;
+    border-radius: 10px;
+    margin: 5px;
+}*/
+#request-lyft{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 98%;
+    background-color: #FF00BF;
+    border-radius: 10px;
+    margin: 5px;
+}
+a#request-lyft{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 0;
+}
+#laboratoria{
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+/*#career-cars li:first-child{
+    background-color: #F3F3F5;
+}*/
+section.career-cars{
+    border-radius: 10px;
+    position: absolute;
+    bottom: 45px;
+    right: 0;
+    left: 0;
+    width: 98%;    
+    margin: 5px;
+}
+hr{
+    margin: 8px;
+    color: #F3F3F5;
+}
+/*---------END---requestLyft-----------*/
 

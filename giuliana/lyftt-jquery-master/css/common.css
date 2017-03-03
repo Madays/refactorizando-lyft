@@ -1,0 +1,16 @@
+.bg-pink {
+    background-color: #FF00BF;
+    padding: 5% 45%;
+    color: white;
+    font-size: 25px;
+}
+.check .blue{
+    color:blue;
+}
+.check input-checkbox {
+    background-color: blue;
+}
+.container .icon{
+   position: relative;
+    right: 500px;
+}
